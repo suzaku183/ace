@@ -1,0 +1,136 @@
+%header.grey-text
+  %nav.white
+    .container
+      = link_to :root do
+        = image_tag "logo.png",size: "220x50"
+      %a(href="#" data-activates="mobile-demo" class="button-collapse grey-text") 
+        %i.mdi-navigation-menu
+      %ul(class="right hide-on-med-and-down")
+        %li= link_to "ホーム",:root,class: "grey-text"
+        %li= link_to "遺品整理","遺品整理",class: "grey-text"
+        %li= link_to "ゴミ屋敷片付け","ゴミ屋敷片付け",class: "grey-text"
+        %li= link_to "不要品回収買取","不要品回収買取",class: "grey-text"
+      
+      %ul(class="side-nav" id="mobile-demo")
+        %li= link_to "ホーム",:root,class: "grey-text"
+        %li= link_to "遺品整理","遺品整理",class: "grey-text"
+        %li= link_to "ゴミ屋敷片付け","ゴミ屋敷片付け",class: "grey-text"
+        %li= link_to "不要品回収買取","不要品回収買取",class: "grey-text"
+
+
+
+%section
+  .container
+    = image_tag "topimage.jpg",class: "responsive-img image"
+
+    .center
+      %h4.blue-text
+        %i.mdi-navigation-arrow-drop-down-circle
+        お見積りから処分までの流れ
+
+    .row
+      .col.s12
+        %h5 片付け・遺品整理・不要品回収 ・買取の事ならお気軽にご相談下さい。
+        #air_box
+          %h6 こんなお悩みをお持ちの方におすすめです 
+          %ul
+            %li
+              %i.mdi-navigation-check.green-text
+              お部屋の状態がひどいので清掃・リフォームもしたい。
+            %li
+              %i.mdi-navigation-check.green-text
+              ごみ屋敷になっており片づけが出来ないので手伝って欲しい。
+            %li
+              %i.mdi-navigation-check.green-text
+              退院後、介護設備を部屋に入れる為に片付け・リフォーム・清掃をお願いしたい。
+            %li
+              %i.mdi-navigation-check.green-text
+              設に入所した後の不用品の整理をお願いしたい。
+            %li
+              %i.mdi-navigation-check.green-text
+              施設又は長期入院の為、部屋を片付けて欲しい。
+      
+    .row
+      = image_tag "flow.jpg",class: "image"
+    /.col.s12.m4
+    /  .center.blue-text
+    /    %h5 お見積り
+    /    %p 
+    /      まずはお見積りをご依頼ください。
+    /      %br/
+    /      %a(href="tel:" class="red-text") 【エースジャパン直通電話】
+    /      %br/
+    /      受付時間　8:00 ~ 20:00
+    /      %br/
+    /      お伺いしご要望・ご相談を承ります。
+    /
+    /.col.s12.m4
+    /  .center.green-text
+    /    %h5 作業開始
+    /    %p 
+    /      ご希望の作業日時に作業を開始。
+    /      %br/
+    /      大量の処分品や重い不要品の運び出しはプロにお任せください。
+    /      %br/
+    /      解体しての運び出しも承ります。
+    /
+    /.col.s12.m4
+    /  .center.orange-text
+    /    %h5 お支払い
+    /    %p 作業開始時に現金にてお支払いください。
+    /    %p
+    /      %i.mdi-action-info
+    /      一部着手金を頂く場合もございます。　
+
+
+%section.container
+  .row
+    .col.s12.m6
+      大阪府下
+
+      堺市・河内長野市・富田林市
+      大阪狭山市・河南町・太子町
+      羽曳野市・松原市・
+      和泉市・高石市・泉大津市・岸和田市
+      貝塚市・泉佐野市・泉南市・阪南市・
+      泉南郡（熊取町・田尻町・岬町）
+      泉北郡忠岡町
+
+      和歌山県　和歌山市 
+      紀の川市・岩出市
+
+      大阪府で遺品整理（詳細）
+
+    .col.s12.m6
+      = image_tag "areamap.jpg"
+
+%footer.page-footer.grey.lighten-4
+  .container
+    .row
+      .col.s12.m8.grey-text:
+        = image_tag "logo.png", size: "220x50"
+        %p 大阪府公安委員会許可　第622150127210号
+        %p 大阪府公安委員会許可　第7211号
+        %p 一般廃棄物収集運搬許可業者（提携）
+        %p 一般社団法人 遺品整理士認定協会 認定第 ISO3835号
+        %p 〒590-0521 大阪府泉南市樽井7-14-23
+
+      .col.s12.m4
+        %ul
+          %li= link_to "ホーム",:root
+          %li= link_to "遺品整理","遺品整理"
+          %li= link_to "ゴミ屋敷片付け","ゴミ屋敷片付け"
+          %li= link_to "不要品回収買取","不要品回収買取"
+
+  .footer-copyright.center
+    .container
+      %address.black-text © 2014 Copyright エースジャパン
+
+
+:css
+  #air_box{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 18px;
+  }
