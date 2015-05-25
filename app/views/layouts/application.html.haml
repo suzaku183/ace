@@ -2,8 +2,12 @@
 %html(lang="ja")
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    %meta(name="description" content="#{@desc}")
+    %meta(name="keywords" content="#{@keywords}")
     %title= @title
     = stylesheet_link_tag    'application', media: 'all'
+    %link(rel="shortcut icon" href="/favico.ico")
     = csrf_meta_tags
   %body
     = yield

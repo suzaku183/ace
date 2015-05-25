@@ -1,0 +1,2 @@
+module IhinHelper
+end

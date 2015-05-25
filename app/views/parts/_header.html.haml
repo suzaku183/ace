@@ -1,0 +1,25 @@
+%header
+  %nav.white
+    .nav-wrapper
+      .container
+        = link_to :root do
+          = image_tag "logo.png",size:"220x50"
+        %a(href="#" data-activates="mobile-demo" class="button-collapse")
+          %i.mdi-navigation-menu.grey-text
+        %ul(class="right hide-on-med-and-down")
+          %li= link_to "ホーム",:root,class: "grey-text"
+          %li= link_to "片付け",kataduke_index_path,class: "grey-text"
+          %li= link_to "遺品整理",ihin_index_path,class: "grey-text"
+          %li= link_to "不要品回収買取",fuyohin_index_path,class: "grey-text"
+          %li= link_to "ネットでお見積り","http://form1.fc2.com/form/?id=838792",class: "grey-text"
+        
+        %ul(class="side-nav" id="mobile-demo")
+          %li= link_to "ホーム",:root
+          %li= link_to "片付け",kataduke_index_path
+          %li= link_to "遺品整理",ihin_index_path
+          %li= link_to "不要品回収買取",fuyohin_index_path
+          %li
+            %a(href="tel:0724255559") 072-425-5559
+          %li
+            %a(href="tel:09081634488") 090-8163-4488
+          %li= link_to "ネットでお見積り","http://form1.fc2.com/form/?id=838792"
